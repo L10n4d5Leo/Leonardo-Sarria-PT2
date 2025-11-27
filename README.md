@@ -21,6 +21,7 @@
 - Apache sirviendo páginas web.
 - MySQL preparado para almacenar datos.
 - PHP procesando scripts.
-# Configuració de VirtualHost amb apache2
--A qui debeis cambiar todo lo que veas que diga "domini" por un nombre que tu elijas
-
+# Configuración de VirtualHost con apache2
+# Aqui debeis cambiar todo lo que veas que diga "domini" por un nombre que tu elijas
+# Creacion de la estructura de directorios 
+- 
