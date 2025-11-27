@@ -21,7 +21,7 @@
 - Apache sirviendo páginas web.
 - MySQL preparado para almacenar datos.
 - PHP procesando scripts.
+# Configuració de VirtualHost amb apache2
 
 
 
-v 
