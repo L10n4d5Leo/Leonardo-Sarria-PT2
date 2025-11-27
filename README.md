@@ -22,6 +22,5 @@
 - MySQL preparado para almacenar datos.
 - PHP procesando scripts.
 # Configuració de VirtualHost amb apache2
-
-
+-A qui debeis cambiar todo lo que veas que diga "domini" por un nombre que tu elijas
 
