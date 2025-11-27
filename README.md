@@ -24,4 +24,21 @@
 # Configuración de VirtualHost con apache2
 # Aqui debeis cambiar todo lo que veas que diga "domini" por un nombre que tu elijas
 # Creacion de la estructura de directorios 
-- 
+- Crearemos un directorio ejemplo "domini.local"  en vuestro caso cambiaias el domini por lo que querais. aqui esta "sudo mkdir -p /var/www/domini.local"
+# Definicion del VirtualHost
+- creais un fitxer para vuestro virtualhost "sudo nano /etc/apache2/sites-available/domini.local.conf"
+- aqui cambiais todo lo que diga domini
+- "<VirtualHost *:80>
+    ServerAdmin admin@domini.local
+    ServerName www.domini.local
+    ServerAlias domini.local
+    DocumentRoot /var/www/domini.local
+    ErrorLog ${APACHE_LOG_DIR}/domini.local_error.log
+    CustomLog ${APACHE_LOG_DIR}/domini.local_access.log combined
+</VirtualHost>"
+- habilitamos el virtualhost "sudo a2ensite domini.local.conf"
+- reiniciamos apache "sudo systemctl restart apache2"
+- modificamos etc/hosts para resolver el dominio localmente "sudo nano /etc/hosts"
+- y esto "127.0.0.1   www.domini.local domini.local"
+- comprobamos si funciona "http://www.domini.local" con el nombre que elegiste
+- Si el directorio /var/www/domini.local está vacío, Apache puede mostrar un error 403 o una lista de directorios (según la configuración). Para probar que funciona, cree un archivo de prueba con esto "echo "<h1>Hola, benvingut domini.local</h1>" | sudo tee /var/www/domini.local/index.html"
