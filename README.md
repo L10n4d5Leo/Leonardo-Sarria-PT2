@@ -42,3 +42,16 @@
 - y esto "127.0.0.1   www.domini.local domini.local"
 - comprobamos si funciona "http://www.domini.local" con el nombre que elegiste
 - Si el directorio /var/www/domini.local está vacío, Apache puede mostrar un error 403 o una lista de directorios (según la configuración). Para probar que funciona, cree un archivo de prueba con esto "echo "<h1>Hola, benvingut domini.local</h1>" | sudo tee /var/www/domini.local/index.html"
+# Asignacion de permisos 
+- canviar el propietario "sudo chown -R $USER:www-data /var/www/domini.local"
+- establecer los permisos "sudo chmod -R 775 /var/www/domini.local"
+  # Pasos clave
+- Crear directorio     "sudo mkdir -p /var/www/domini.local"
+- Configurar VirtualHost   "Editar  "/etc/apache2/sites-available/domini.local.conf"
+- Habilitar sitio          "sudo a2ensite domini.local.conf"
+- Reiniciar Apache         "sudo systemctl restart apache2"
+- Añadir dominio a hosts   "127.0.0.1 www.domini.local en /etc/hosts"
+- Verificar permisos       "chown y chmod como se indica"
+- Depurar errores          "Consultar error.log y access.log"
+
+
