@@ -1,5 +1,5 @@
 # Primero entramos la boton de  files 
-<img width="1080" height="418" alt="Captura de pantalla 2025-12-04 120045" src="https://github.com/user-attachments/assets/3911837a-3703-4278-b46d-e35f83df90b8" />
+![Text alternatiu](primer.png)
 ## para subir archivos vamos al boton de new 
 <img width="867" height="402" alt="Captura de pantalla 2025-12-04 120053" src="https://github.com/user-attachments/assets/3707f8f2-97b4-44ee-a5b5-caf503a476da" />
 ## ahora en upload files
