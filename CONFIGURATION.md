@@ -12,5 +12,3 @@ aqui tocamos el boton del carpeta creada que es una personita azul y despues aqu
 ![Text alternatiu](SEPTIMO.png)
 ## Aqui entramos en accounts
 ![Text alternatiu](OCTAVO.png)
-# Tocamos new account 
-![Text alternatiu](decimo.png)
